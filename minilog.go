@@ -42,7 +42,7 @@ var (
 
 func print(message interface{}, level string) {
 	//format datetime [level] mesage
-	format := "%s [%s] %s\n"
+	format := "%s [%s] %v\n"
 
 	var levelFormat string
 	if Colored {
