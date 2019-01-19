@@ -1,9 +1,9 @@
 # minilog
 Golang minimalistic package for logging
 
-Color output logs
+The possibility color output logs
 
-The possibility of logging to a file
+The possibility write log to file
 
 ```
 go get github.com/wired-R/minilog
