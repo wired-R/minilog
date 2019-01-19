@@ -30,3 +30,4 @@ func main() {
     log.Debug("This is debug message")
 }
 ```
+![](images/view.png)
