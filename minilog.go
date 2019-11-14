@@ -54,31 +54,31 @@ func print(message interface{}, level string) {
 	fmt.Fprintf(Output, format, time.Now().Format(TimeFormat), levelFormat, message)
 }
 
-func Debug(message interface{}) {
+func Debug(message ...interface{}) {
 	if Level <= debug {
 		print(message, "DEBUG")
 	}
 }
 
-func Info(message interface{}) {
+func Info(message ...interface{}) {
 	if Level <= info {
 		print(message, "INFO")
 	}
 }
 
-func Warning(message interface{}) {
+func Warning(message ...interface{}) {
 	if Level <= warn {
 		print(message, "WARN")
 	}
 }
 
-func Error(message interface{}) {
+func Error(message ...interface{}) {
 	if Level <= err {
 		print(message, "ERROR")
 	}
 }
 
-func Fatal(message interface{}) {
+func Fatal(message ...interface{}) {
 	if Level <= fatal {
 		print(message, "FATAL")
 	}
